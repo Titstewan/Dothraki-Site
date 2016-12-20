@@ -1,0 +1,127 @@
+/*  Main CSS for the page's style
+
+For editing the color of the text, scroll below to the lines where the color codes are.
+This is a quite good style control center ;P.
+
+Woooo, how much I lost the game to write and optimize these codes.
+
+ta Titstewan  */
+	
+a:link {
+	color: #9f0000;
+	text-decoration: none;
+	}
+
+a:visited {
+	color: #900000;
+	text-decoration: none;
+	}
+
+a:hover {
+	text-decoration: underline;
+	}
+
+html, body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #d6d6d6;
+	margin: 0px;
+	padding: 0px;
+	min-width: 600px;
+	}
+
+.home {
+	font-size: 2em;
+	letter-spacing: 0px;
+	line-height: 1.25em;
+	}
+
+h2 {
+	color: #780000;
+}
+	
+.mblock {
+	background-color: rgba(255,255,255,0.75);
+	min-width: 600px;
+	max-width: 2560px;
+	font-size: 13pt;
+	box-sizing: border-box;
+	color: #353535;
+	overflow: hidden;
+	padding: 3em 15% 5em 15%;
+	}
+
+.footer {
+	background-color: #d6d6d6;
+	min-width: 800px;
+	max-width: 2560px;
+	font-size: 10pt;
+	box-sizing: border-box;
+	color: #555555;
+	text-align: left;
+	padding: 2em 15% 2em 15%;
+	}
+
+.img {
+	display: table-cell;
+	position: relative;
+	margin: 20px;
+	height: 200px;
+	width: 200px;
+	float: left;
+	text-align: center;
+	background-color: #8ac3db;
+	border-radius: 10px;
+	}
+
+.bold {
+	font-weight: bold;
+	}
+
+nav {
+	height: 50px;
+	min-width: 600px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.7);
+	font-size: 1.25em;
+	position: fixed;
+	z-index: 1000;
+	border-bottom: #780000 solid 2px;
+	}
+
+nav ul {
+	margin: 0 auto;
+	padding: 0;
+	height: 50px;
+	width: 600px;
+	}
+
+nav li {
+	display: inline;
+	float: left;
+	}
+
+nav a {
+	color: #780000 !important;
+	display: inline-block;
+	min-width: 100px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 50px;
+	text-shadow: 1px 1px 0px #760000 !important;
+	transition: .3s background-color;
+	-moz-transition: .3s background-color;
+	-webkit-transition: .3s background-color;
+	}
+
+nav li a {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	}
+
+nav a:hover, nav a:active, nav a:visited {
+	background-color: rgba(200, 200, 200, 0.8);
+	color: #780000 !important;
+	text-decoration: none;
+	}
+
