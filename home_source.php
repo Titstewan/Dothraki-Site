@@ -36,7 +36,7 @@ function home()
 {
 	echo '
 	<div class="mblock">
-    Content
+		Content
 	</div>';
 }
 
@@ -75,7 +75,7 @@ function irc_dothraki()
 {
 	echo '
 	<div class="mblock">
-    Content
+	    Content
 	</div>
 	</div>';
 }
@@ -94,7 +94,7 @@ function d_staff()
 {
 	echo '
 	<div class="mblock">
-  Content
+		Content
 	</div>';
 }
 ?>
