@@ -75,7 +75,7 @@ function irc_dothraki()
 {
 	echo '
 	<div class="mblock">
-	    Content
+		Content
 	</div>
 	</div>';
 }
