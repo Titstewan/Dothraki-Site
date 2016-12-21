@@ -45,7 +45,7 @@ function hp_main()
 	);
 
 	// Otherwise, it was set - so let's go to that action.
-	require_once(dirname(__FILE__) . 'home_source.php/' . $actionArray[$_REQUEST['action']][0]);
+	require_once(dirname(__FILE__) . '/' . $actionArray[$_REQUEST['action']][0]);
 	return $actionArray[$_REQUEST['action']][1];
 }
 
