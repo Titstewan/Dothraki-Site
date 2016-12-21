@@ -5,6 +5,8 @@
 // This is kind of important.
 define('NDW', 1);
 
+$sourcedir = dirname(__FILE__);
+
 // Emit some headers for some modicum of protection against nasties.
 if (!headers_sent())
 {
@@ -16,8 +18,6 @@ if (!headers_sent())
 
 // Let's require the source file!
 require_once(dirname(__FILE__) . '/home_source.php');
-
-//$sourcedir = 'D:\\server\\htdocs\\dothraki_site';
 
 // Call the main functions, woo!
 // The <html> start tag and the buttors for Na'vigation
@@ -31,11 +31,7 @@ call_user_func(hp_main());
 // The main controlling function.
 function hp_main()
 {
-	// Check if we view an action else we view the homepage
-	if (empty($_REQUEST['action']))
-	{
-		home();
-	}
+	global $sourcedir;
 
 	// Here's the $_REQUEST['action'] array - $_REQUEST['action'] => array($file, $function).
 	$actionArray = array(
@@ -44,13 +40,20 @@ function hp_main()
 		'staff' => array('home_source.php', 'd_staff'),
 	);
 
+	// Get the function and file to include - if it's not there, do the index.
+	if (!isset($_REQUEST['action']) || !isset($actionArray[$_REQUEST['action']]))
+	{
+		// Fall through to the index then...
+		require_once($sourcedir . '/index.php');
+		return 'home';
+	}
+
 	// Otherwise, it was set - so let's go to that action.
-	require_once(dirname(__FILE__) . '/' . $actionArray[$_REQUEST['action']][0]);
+	require_once($sourcedir . '/' . $actionArray[$_REQUEST['action']][0]);
 	return $actionArray[$_REQUEST['action']][1];
 }
 
 // HTML end </html> plus the disclaimer
 html_bottom();
-
 
 ?>
