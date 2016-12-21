@@ -49,16 +49,16 @@ function navbar()
 	<nav>
 		<ul class="nav">
 			<li>
-				<a href="', $weblink ,'index.php">Home</a>
+				<a href="', $weblink ,'">Home</a>
 			</li>
 			<li>
-				<a href="', $weblink ,'media.php">Media</a>
+				<a href="', $weblink ,'?action=media">Media</a>
 			</li>
 			<li>
-				<a href="', $weblink ,'irc_dothraki.php">IRC</a>
+				<a href="', $weblink ,'?action=irc_dothraki">IRC</a>
 			</li>
 			<li>
-				<a href="', $weblink ,'staff.php">Staff</a>
+				<a href="', $weblink ,'?action=staff">Staff</a>
 			</li>
 			<li>
 				<a href="#">Wiki</a>
@@ -71,7 +71,7 @@ function navbar()
 }
 
 // ...for the IRC page
-function irc_dothraki()
+function d_irc()
 {
 	echo '
 	<div class="mblock">
@@ -81,7 +81,7 @@ function irc_dothraki()
 }
 
 // the media page
-function media()
+function d_media()
 {
 	echo '
 	<div class="mblock">
