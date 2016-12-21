@@ -52,13 +52,13 @@ function navbar()
 				<a href="', $weblink ,'">Home</a>
 			</li>
 			<li>
-				<a href="', $weblink ,'?action=media">Media</a>
+				<a href="', $weblink ,'?page=media">Media</a>
 			</li>
 			<li>
-				<a href="', $weblink ,'?action=irc_dothraki">IRC</a>
+				<a href="', $weblink ,'?page=irc_dothraki">IRC</a>
 			</li>
 			<li>
-				<a href="', $weblink ,'?action=staff">Staff</a>
+				<a href="', $weblink ,'?page=staff">Staff</a>
 			</li>
 			<li>
 				<a href="#">Wiki</a>
