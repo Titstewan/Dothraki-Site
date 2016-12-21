@@ -24,7 +24,7 @@ function html_header()
 function html_bottom()
 {
 	echo '
-	<div class="footer">
+		<div class="footer">
 		blah...
 		</div>
 	</body>
