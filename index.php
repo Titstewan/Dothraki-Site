@@ -33,7 +33,7 @@ function hp_main()
 {
 	global $sourcedir;
 
-	// Here's the $_REQUEST['action'] array - $_REQUEST['action'] => array($file, $function).
+	// Here's the $_REQUEST['page'] array - $_REQUEST['page'] => array($file, $function).
 	$actionArray = array(
 		'irc_dothraki' => array('home_source.php', 'd_irc'),
 		'media' => array('home_source.php', 'd_media'),
@@ -41,7 +41,7 @@ function hp_main()
 	);
 
 	// Get the function and file to include - if it's not there, do the index.
-	if (!isset($_REQUEST['action']) || !isset($actionArray[$_REQUEST['action']]))
+	if (!isset($_REQUEST['page']) || !isset($actionArray[$_REQUEST['page']]))
 	{
 		// Fall through to the index then...
 		require_once($sourcedir . '/index.php');
@@ -49,8 +49,8 @@ function hp_main()
 	}
 
 	// Otherwise, it was set - so let's go to that action.
-	require_once($sourcedir . '/' . $actionArray[$_REQUEST['action']][0]);
-	return $actionArray[$_REQUEST['action']][1];
+	require_once($sourcedir . '/' . $actionArray[$_REQUEST['page']][0]);
+	return $actionArray[$_REQUEST['page']][1];
 }
 
 // HTML end </html> plus the disclaimer
