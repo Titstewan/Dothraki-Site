@@ -17,7 +17,7 @@ if (!headers_sent())
 }
 
 // Let's require the source file!
-require_once(dirname(__FILE__) . '/home_source.php');
+require_once($sourcedir . '/home_source.php');
 
 // Call the main functions, woo!
 // The <html> start tag and the buttors for Na'vigation
