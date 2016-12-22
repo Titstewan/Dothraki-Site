@@ -20,10 +20,12 @@ a:visited {
 a:hover {
 	text-decoration: underline;
 	}
+html {
+	background: #fff url("../res/daenerys_got.jpg") repeat fixed;
+}
 
 html, body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background-color: #d6d6d6;
 	margin: 0px;
 	padding: 0px;
 	min-width: 600px;
