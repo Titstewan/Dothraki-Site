@@ -1,4 +1,22 @@
 <?php
+/*----------------------------
+This is the main source file for the new index.php.
+This file contains some important variables as well as the main functions to generated the pages.
+
+Following functions are in use:
+
+html_header()
+html_bottom()
+home()
+navbar()
+d_irc()
+d_media()
+d_staff()
+
+Author: Tìtstewan
+---
+----------------------------*/
+
 /* Some php functions for generating the site */
 if (!defined('NDW'))
 	die('No direct access...');
