@@ -1,7 +1,7 @@
 <?php
 /*----------------------------
 This is the main source file for the new index.php.
-This file contains some important variables as well as the main functions to generated the pages.
+This file contains some important variables as well as the main functions to generate the pages.
 
 Following functions are in use:
 
