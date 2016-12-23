@@ -10,7 +10,7 @@ $sourcedir = dirname(__FILE__);
 // Emit some headers for some modicum of protection against nasties.
 if (!headers_sent())
 {
-	// Future versions will make some of this configurable. This is primarily a 'safe' configuration for most cases for now.
+	// This is primarily a 'safe' configuration for most cases for now.
 	header('X-Frame-Options: SAMEORIGIN');
 	header('X-XSS-Protection: 1');
 	header('X-Content-Type-Options: nosniff');
